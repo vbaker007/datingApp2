@@ -1,7 +1,16 @@
 <h1>Welcome to AShot@Love Dating</h1>
-<h2>100% Free Online Dating Website, Tailored to Finding A Match that Suits You!</h2> 
-<% @users.each do |user| %>
-  <h2><%= user.name %> </h2>
-  
+<h2>100% Free Online Dating Website, Tailored to Finding a Perfect Match For You!</h2> 
+  <% @users.each do |user| %>
+    <h2><%= user.name %> </h2>
+    <h2><%= user.gender %> </h2>
+    <h2><%= user.occupation %></h2>
+    <h2><%= user.heterosexual %></h2>
+    <h2><%= user.age_range_pref %></h2>
+    <h2><%= user.zipcode %></h2>
+    <h2><%= user.hobbies %></h2>
+
+<%= link_to 'Show User', user_path(user) %>
+<% end %>
+
 
 

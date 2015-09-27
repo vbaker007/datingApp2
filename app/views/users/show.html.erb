@@ -1,2 +1,12 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Welcome to AShot@Love Dating</h1>
+<h2>100% Free Online Dating Website, Tailored to Finding a Perfect Match For You!</h2>
+  <h2><%= @user.name %></h2>
+  <h2><%= @user.gender %></h2>
+  <h2><%= @user.age %></h2>
+  <h2><%= @user.occupation %></h2>
+  <h2><%= @user.heterosexual %></h2>
+  <h2><%= @user.age_range_pref %></h2>
+  <h2><%= @user.zipcode %></h2>
+  <h2><%= @user.hobbies %></h2>
+<%= link_to 'Back', users_path %>
+

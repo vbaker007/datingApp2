@@ -1,2 +1,30 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Welcome to AShot@Love Dating</h1>
+<h2>100% Free Online Dating Website, Tailored to Finding a Perfect Match For You!</h2>
+<%= form_for @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <%= f.label :age %>
+  <%= f.integer_field :age %>
+
+  <%= f.label :occupation %>
+  <%= f.text_field :occupation %>
+
+  <%= f.label :heterosexual? %>
+  <%= f.boolean_field :heterosexual %>
+
+  <%= f.label :age_range_pref %>
+  <%= f.integer_field :age_range_pref %>
+
+  <%= f.label :zipcode %>
+  <%= f.integer_field :zipcode %>
+
+  <%= f.label :hobbies %>
+  <%= f.text_field :hobbies %>
+
+  <%= f.submit %>
+<% end %>
+
